@@ -1,0 +1,1 @@
+This directory contains sample header and input files used for COAWST and ROMS simulations. Additionally, the sub-directory "COAWST_modifications" contains files that have been altered from COAWST to allow for inclusion of the turbine drag array area as well as the possibility of wind-current interactions between ROMS and WRF.
