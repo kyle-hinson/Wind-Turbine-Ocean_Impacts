@@ -1,0 +1,29 @@
+$ -------------------------------------------------------------------- $
+$ WAVEWATCH III Grid preprocessor input file                           $
+$ -------------------------------------------------------------------- $
+  'OCCAMS 2km Model   '
+$
+   1.10  0.030  34  36  0.5
+$
+   F T T T T T
+$
+   50. 50. 25.  10.
+$
+  &SIN4 SWELLF = 0.66, BETAMAX = 1.75 /
+END OF NAMELISTS
+$
+    'CURV' T 'NONE'
+    565  753
+    40 1. 0. 1 1 'FREE' 'NAME' './ww3_OCCAMS_xcoord.dat' 
+    41 1. 0. 1 1 'FREE' 'NAME' './ww3_OCCAMS_ycoord.dat' 
+$ Bottom bathymetry
+-0.10   2.50  42  -1.000  1  1 'FREE'  'NAME'  './ww3_OCCAMS_bathy.bot'
+$ Sub-grid information 
+$              50  0.010000  1  1  '(....)'  NAME  'ca_3km.obstr_lev1'
+$ Mask
+              60  1  1  'FREE'  'NAME'  './ww3_OCCAMS_mapsta.inp'
+$
+      0.  0.  0.  0.  0
+$ -------------------------------------------------------------------- $
+$ End of input file                                                    $
+$ -------------------------------------------------------------------- $
